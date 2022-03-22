@@ -1,0 +1,61 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.pic {
+  max-width: 200px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.form-label {
+  font-size: 28px;
+}
+
+.input-group {
+  max-width: 900px;
+  padding-bottom: 40px;
+}
+
+.input-group-text {
+ font-size: 24px; 
+}
+
+.form-control {
+  font-size: 24px; 
+}
+
+.btn {
+  font-size: 24px;
+}
+
+.url-output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.success {
+  font-size: 28px;
+}
+
+.url-output-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.url-output-text {
+  width: 500px;
+  font-size: 24px;
+}

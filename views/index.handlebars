@@ -1,0 +1,13 @@
+<!-- ./views/index.handlebars -->
+<div>
+  <form action="/shorten" method="POST" class="info">
+    <label for="basic-url" class="form-label">Your vanity URL</label>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+      <input type="url" name="url" class="form-control" id="basic-url" aria-describedby="basic-addon3"
+        placeholder="input URL here" required>
+      <!-- 加入required, 若使用者沒有輸入內容，就按下了送出鈕，需要防止表單送出並提示使用者  -->
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Shorten</button>
+  </form>
+</div>
