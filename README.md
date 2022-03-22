@@ -21,3 +21,13 @@
 5. Bootstrap 5
 6. MongoDB
 7. Mongoose v6.2.7
+
+如何使用
+1. 安裝 Node.js and npm
+2. 下載專案 https://github.com/PichaHuang/short_url_generator.git
+3. 終端機 npm install
+4. 執行腳本 npm run start
+5. 終端機出現 Express is listening on localhost:3000 訊息表示 web server 已啟動
+6. 瀏覽器網址列輸入 http://localhost:3000
+7. 按下 Shorten 按鈕以取得縮網址
+
