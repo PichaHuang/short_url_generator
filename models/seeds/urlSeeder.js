@@ -2,7 +2,7 @@
 const mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/short_url_generator')
 
-// 取得url.js
+// 取得 Url model
 const Url = require('../url')
 
 // 取得連線狀態：設定 db
