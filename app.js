@@ -19,8 +19,7 @@ const bodyParser = require('body-parser')
 // setting body-parser
 app.use(bodyParser.urlencoded({ extended: true }))
 
-// require gererateRandom.js file
-const gererateRandom = require('./generateRandom')
+
 
 // 引用設定檔
 require('./config/mongoose')
@@ -28,7 +27,7 @@ require('./config/mongoose')
 
 // 取得 Url model
 const Url = require('./models/url')
-const generateRandom = require('./generateRandom')
+
 
 // 引用路由器, 將 request 導入路由器
 const routes = require('./routes')

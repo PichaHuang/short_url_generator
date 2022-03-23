@@ -5,6 +5,9 @@ const router = express.Router()
 // 取得 Url model
 const Url = require('../../models/url')
 
+// require generateRandom.js file
+const generateRandom = require('../../generateRandom')
+
 // 定義首頁路由
 // routes setting
 router.get('/', (req, res) => {
@@ -31,7 +34,10 @@ router.post('/', (req, res) => {
         res.render('shorten', { url: data.shortenUrl })       // 渲染 shorten 頁面並顯示縮網址
       }
     })
-    .catch((err) => console.log(err))
+    .catch((err) => {
+      console.log(err)
+      res.render('errorPage', { error: err.message })
+    })
 })
 
 // 使用者在網址列輸入短網址, 瀏覽器就會導向原本的網站
@@ -46,7 +52,10 @@ router.get('/:randomIndex', (req, res) => {
         res.redirect(data.originalUrl)                        // 畫面導向該筆資料的長網址
       }
     })
-    .catch((err) => console.log(err))
+    .catch((err) => {
+      console.log(err)
+      res.render('errorPage', { error: err.message })
+    })
 })
 
 // 匯出路由模組
